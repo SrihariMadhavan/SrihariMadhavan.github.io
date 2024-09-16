@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Srihari Madhavan</title>
+    <title>Portfolio of Srihari Madhavan</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            margin: 0;
+            padding: 0;
         }
-        /* Main heading style */
         h1 {
             text-align: center;
             margin-top: 20px;
@@ -15,7 +18,7 @@
         /* Style the tab container */
         .tab {
             overflow: hidden;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #444;
             margin: 20px;
         }
         /* Style the tab links */
@@ -28,11 +31,12 @@
             padding: 14px 16px;
             margin-right: 5px;
             font-size: 17px;
+            color: #ffffff;
             transition: background-color 0.3s;
         }
         /* Change background color on hover */
         .tab button:hover {
-            background-color: #ddd;
+            background-color: #333;
         }
         /* Active tab link */
         .tab button.active {
@@ -43,30 +47,30 @@
             display: none;
             padding: 20px;
             margin: 0 20px;
-            border: 1px solid #ccc;
-            border-top: none;
         }
     </style>
 </head>
 <body>
 
-    <h1>Srihari Madhavan</h1>
+    <h1>PORTFOLIO OF SRIHARI MADHAVAN</h1>
 
     <!-- Tab links -->
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Tab1')" id="defaultOpen">Tab 1</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+        <button class="tablinks" onclick="openTab(event, 'Business')" id="defaultOpen">Business/Data Analytics Portfolio</button>
+        <button class="tablinks" onclick="openTab(event, 'Product')">Product/Project Management Portfolio</button>
     </div>
 
     <!-- Tab content -->
-    <div id="Tab1" class="tabcontent">
-        <h3>Tab 1</h3>
-        <p>Content for Tab 1 goes here.</p>
+    <div id="Business" class="tabcontent">
+        <h2>Business/Data Analytics Portfolio</h2>
+        <p>Content for Business/Data Analytics Portfolio goes here.</p>
+        <!-- Add your portfolio items here -->
     </div>
 
-    <div id="Tab2" class="tabcontent">
-        <h3>Tab 2</h3>
-        <p>Content for Tab 2 goes here.</p>
+    <div id="Product" class="tabcontent">
+        <h2>Product/Project Management Portfolio</h2>
+        <p>Content for Product/Project Management Portfolio goes here.</p>
+        <!-- Add your portfolio items here -->
     </div>
 
     <script>
